@@ -50,7 +50,7 @@ elif sidebar_option == 'Tren Penyewaan Bulanan':
     st.write("Berikut adalah tren penyewaan sepeda bulanan di tahun 2012:")
 
     # Membuat visualisasi untuk tren bulanan
-    fig2, ax2 = plt.subplots(figsize=(10, 6))
+    fig2, ax2 = plt.subplots(figsize=(10, 8))
     rata_rata_per_bulan.plot(kind='line', marker='o', ax=ax2)
     ax2.set_title('Tren Rata-rata Penyewaan Sepeda per Bulan')
     ax2.set_xlabel('Bulan')
