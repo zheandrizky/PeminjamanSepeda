@@ -55,7 +55,9 @@ elif sidebar_option == 'Tren Penyewaan Bulanan':
     ax2.set_title('Tren Rata-rata Penyewaan Sepeda per Bulan')
     ax2.set_xlabel('Bulan')
     ax2.set_ylabel('Jumlah Penyewaan')
-
+    # Memutar label x agar tidak tumpang tindih
+    plt.xticks(rotation=45, ha='right')  # Memutar label sumbu x 45 derajat
+    
     st.pyplot(fig2)
 
 elif sidebar_option == 'Data Penyewaan Sepeda':
